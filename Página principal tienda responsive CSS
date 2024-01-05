@@ -1,0 +1,231 @@
+body{
+    background-color: rgba(229,40,36,255);
+}
+header{
+    background-color: rgba(229,40,36,255);
+    display: flex;
+}
+.logo{
+    width: 10%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.superior{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0%;
+    font-size: 28px;
+}
+.logosuperior{
+    display: flex;
+    width: 90%;
+}
+.home{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-right: 10%;
+}
+.about{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-right: 10%;
+}
+.services{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-right: 10%;
+}
+.contact{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
+}
+.discount{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+main{
+    display: flex;
+}
+.esquerra{
+    width: 50%;
+}
+.dreta{
+    width: 50%;
+    text-align: center;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 140px;
+    text-align: center;
+    line-height : 100px; 
+    color:black;
+    margin-bottom: 0%;
+}
+.lorem{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    line-height: 37px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.read{
+    text-align: center;
+    background-color:black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.readmore{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+footer{
+    display: flex;
+}
+.abaix{
+    display: flex;
+    width: 15%;
+}
+.twitter{
+    margin-left: 10%;
+}
+.twitternom{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.facebook{
+    margin-left: 5%;
+}
+.facebooknom{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.instagram{
+    margin-left: 5%;
+}
+.instagramnom{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+ul li{
+    display: inline;
+}
+a:link{
+    text-decoration: none;
+}
+ 
+@media (max-width: 1500px){
+    footer{
+        display: block;
+    }
+    .abaix{
+        width: 30%;
+    }
+}
+
+@media (max-width: 1395px){
+    .foto{
+        width: 435px;
+        height: 455px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    .lorem{
+        font-size: 18px;
+
+    }
+   .readmore{
+    font-size: 17px;
+   }
+}
+
+@media (max-width: 1200px){
+    .superior{
+        display: block;
+    }
+    .home{
+        font-size: 22px;
+    }
+    .about{
+        font-size: 22px;
+    }
+    .services{
+        font-size: 22px;
+    }
+    .contact{
+        font-size: 22px;
+    }
+    .logosuperior{
+       display: block;
+    }
+    .read{
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+    footer{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 870px){
+    main{
+        display: block;
+    }
+    .foto{
+        width: 335px;
+        height: 355px;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+    .discountfoto{
+        width: 70%;
+    }
+    .superior{
+        width: 50%;
+    }
+    h1{
+        font-size: 60px;  
+    }
+    .lorem{
+        margin-top: 2px;
+    }
+    .twitternom{
+        font-size: 15px;
+    }
+    .facebooknom{
+        font-size: 15px;
+    }
+    .instagramnom{
+        font-size: 15px;
+    }
+}
