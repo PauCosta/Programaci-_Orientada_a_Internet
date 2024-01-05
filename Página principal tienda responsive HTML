@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="indexstylesheet.css">
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&display=swap" rel="stylesheet">
+
+        <title>
+            Practica P02
+        </title>
+    </head>
+
+    <body>
+        <header> <!-- Logo, links interns i imatge descuento -->
+            <div class="logosuperior">
+                <div class="logo">
+                    <img src="../p02/imatges/logo.png" alt="logo">                   
+                </div>
+                <div class="superior">
+                    <ul>
+                            <li> <a class="home" href="home.html">Home</a> </li>
+                            <li> <a class="about" href="about.html">About</a> </li>
+                            <li> <a class="services" href="service.html">Services</a> </li>
+                            <li> <a class="contact" href="contact.html">Contact Us</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="discount">
+                <img class="discountfoto" src="../p02/imatges/discount.png" alt="discount"> 
+            </div>
+        </header>
+
+        <main> <!-- Titol, text, read more i foto -->
+            <div classe="esquerra">
+                <div>
+                    <h1>
+                        DISCOUNT TODAY!
+                    </h1>
+                </div>
+                <div>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Quis ipsum suspendisse ultrices gravida. Risus commodo viverra <br> maecenas accumsan lacus vel facilisis.
+                    </p>
+                </div>
+                <div class="read">
+                    <p>
+                        <a class="readmore" href="readmore.html">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div classe="dreta">
+                <img class="foto" src="../p02/imatges/foto.png" alt="foto">
+            </div>
+        </main>
+
+        <footer> <!-- Enlaces externs a xarxes socials amb imatges -->
+                <div class="abaix">
+                        <a class="twitter" href="https://twitter.com/" target="_blank"><img src="../p02/imatges/ico_twitter.png" alt="twitter">
+                        </a>
+                        <a class="twitternom" href="https://twitter.com/" target="_blank">YOUR ACCOUNT</a> 
+                </div>
+                <div class="abaix">
+                        <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="../p02/imatges/ico_facebook.png" alt="facebook">
+                        </a>
+                        <a class="facebooknom" href="https://www.facebook.com/" target="_blank">YOUR ACCOUNT</a> 
+                </div>
+                <div class="abaix">
+                        <a class="instagram" ref="https://www.instagram.com/" target="_blank"><img src="../p02/imatges/ico_instagram.png" alt="instagram">
+                        </a>
+                        <a class="instagramnom" href="https://www.instagram.com/" target="_blank">YOUR ACCOUNT</a> 
+                </div>
+        </footer>
+    </body>
+</html>
