@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            body{
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: 'Roboto';
+}
+.arriba{
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+}
+.foto{
+    height: 100%;
+}
+h1{
+    margin-left: 30px;
+    margin-top: 0px;
+    height: 10%;
+}
+#edad{
+    margin-left: 30px;
+    height: 10%;
+    font-size: 20px;
+}
+.edadpersonal{
+    display: flex
+}
+#estudis{
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+#experiencia{
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+main{
+    margin-top: 15px;
+}
+button {
+    padding: 8px 60px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+.desplegables{
+    width: 100%;
+    height: 200px;
+}
+.botoestudis{
+    height: 50%;
+}
+.botoexperiencia{
+    height: 50%;
+}
+#formulari{
+    border-radius: 10px;
+}
+.nomlabel{
+    width: 60%;
+}
+.emaillabel{
+    width: 59%;
+}
+.missatgelabel{
+    width: 53%;
+    padding-bottom: 20px;
+}
+.formularidia{
+    width: 30%;
+    background-color: #e0e2d6;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+}
+.formularinit{
+    width: 30%;
+    background-color: #8a8e90;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+}
+.formularititol{
+    font-size: 20px;
+    font-weight: 500;
+}
+.xarxes{
+    font-size: 20px;
+    font-weight: 500;
+}
+.abaix{
+    display: flex;
+}
+.twitter{
+    margin-right: 20px;
+}
+.facebook{
+    margin-right: 20px;
+}
+@media (max-width: 1150px){
+    #formulari{
+        width: 70%;
+    }
+}
+@media (max-width: 625px){
+    h1{
+        font-size: 20px;
+    }
+    #edad2{
+        font-size: 17px;
+    }
+    .foto{
+        height: 60%;
+    }
+    .foto2{
+        width: 150px;
+        height: 200px;
+    }
+}
+@media (max-width: 405px){
+    h1{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    #edad2{
+        font-size: 17px;
+    }
+    .foto{
+        height: 60%;
+    }
+    .foto2{
+        width: 150px;
+        height: 200px;
+    }
+    #formulari{
+        width: 100%;
+    }
+}
+@media (max-width: 387px){
+    #edad{
+        margin-left: 0px;
+    }
+}
+
+        </style>
+        <title>
+           P03
+        </title>
+ 
+
+
+    </head>
+    <body onload="fondo(event); edad2(event);">
+        <script>
+            var hora = new Date().getHours();
+            if (hora > 7 && hora < 18 ) {
+                document.body.style.backgroundColor="#fefffa";
+               
+            } else {
+                document.body.style.backgroundColor="grey";
+            }
+            function fondo(event){
+                event.preventDefault();
+                var hora = new Date().getHours();
+                var element = document.getElementById("formulari");
+                if (hora > 7 && hora < 18 ) {
+                    element.classList.add("formularidia")  
+                    element.classList.remove("formularinit")                              
+                } else {
+                    element.classList.add("formularinit")    
+                    element.classList.remove("formularidia")                
+           
+                }
+            }
+            function edad2() {
+                var fechanacimiento = new Date("2002-04-08");
+                var hoy = new Date();
+                var edad = hoy.getFullYear() - fechanacimiento.getFullYear();
+                var diferenciameses = hoy.getMonth() - fechanacimiento.getMonth();
+                if (diferenciameses < 0 || (diferenciameses === 0 && hoy.getDate() < fechanacimiento.getDate())) {
+                    edad--;
+                }
+                document.getElementById("edad2").innerHTML=edad+" anys, Terrassa.";
+            }
+
+
+            function toggle1() {
+                var x = document.getElementById("estudis");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                }
+                else {
+                    x.style.display = "none";
+                }
+            }
+            function toggle2() {
+                var x = document.getElementById("experiencia");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                }
+                else {
+                    x.style.display = "none";
+                }
+            }
+
+
+            function mostra(event){
+                event.preventDefault();
+                var enviar=document.getElementById('enviar').value="Enviat!";
+
+
+                var spanenviar = document.createElement('span');
+                var enviartxt = document.createTextNode(enviar);
+                spanenviar.appendChild(enviartxt);
+                document.getElementById('enviar').appendChild(spanenviar);
+ 
+                document.getElementById('enviar').getElementsByTagName("input")[0].remove();
+
+
+                alert("Enviat!");
+            }
+        </script>
+   
+        <header>
+            <div class="arriba">
+                <div class="foto">
+                    <img class="foto2" src="../p03/imatges/foto.jpg" alt="foto" width="250" height="330">
+                </div>
+                <div class="text">
+                    <h1>
+                        Pau Costa Forns
+                    </h1>
+                    <div class="edadpersonal">
+                        <p id="edad">
+                            <span id="edad2"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="desplegables">
+                <div class="botoestudis">
+                    <button onclick="toggle1()">Estudis</button>
+                    <div id="estudis" style="display: none">
+                        Universitat Politecnica de Catalunya - Centre de la Imatge i la Tecnologia Multimedia <br> Batxillerat Tecnologic
+                    </div>
+                </div>
+                <div class="botoexperiencia">
+                    <button onclick="toggle2()">Experiencia laboral</button>
+                    <div id="experiencia" >
+                        Tecnic informatic - Microsoft Inc. <br> Tecnic informatic - Apple Inc.
+                    </div>
+                </div>
+            </div>
+            <p class="formularititol">
+                Formulari de contacte
+            </p>
+            <div id="formulari">
+                <form onsubmit="mostra(event)">
+                    <p id="nom">
+                        <label>Nom:</label>
+                        <input class="nomlabel" type="text" required placeholder="Nom i cognoms">
+                    </p>
+                    <p id="email">
+                        <label>Email:</label>
+                        <input class="emaillabel" type="email" required placeholder="Email">
+                    </p>
+                    <p id="missatge">
+                        <label>Comentari:</label>
+                        <textarea required placeholder="Missatge" class="missatgelabel"></textarea>
+                    </p>
+                    <p id="enviar">
+                        <input type="submit" value="Enviar">
+                    </p>
+                </form>
+            </div>
+        </main>
+
+
+        <footer>
+        <p class="xarxes">
+            Xarxes socials
+        </p>
+        <div class="abaix">
+            <a class="twitter" href="https://twitter.com/" target="_blank"><img src="../p03/imatges/ico_twitter.png" alt="twitter">
+            </a>
+            <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="../p03/imatges/ico_facebook.png" alt="facebook">
+            </a>
+            <a class="instagram" href="https://www.instagram.com/" target="_blank"><img src="../p03/imatges/ico_instagram.png" alt="instagram">
+            </a>
+        </div>
+        </footer>
+    </body>
+</html>
